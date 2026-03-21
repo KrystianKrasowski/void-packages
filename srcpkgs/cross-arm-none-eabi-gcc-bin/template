@@ -1,0 +1,55 @@
+# Template file for 'cross-arm-none-eabi-15.2'
+pkgname=cross-arm-none-eabi-gcc-bin
+version=15.2.1
+revision=1
+short_desc="GNU Compiler Collection"
+maintainer="Krystian Krasowski <krystiankrasowski@gmail.com>"
+license="GFDL-1.2-or-later, GPL-3.0-or-later, LGPL-2.1-or-later"
+homepage="https://developer.arm.com"
+distfiles="https://developer.arm.com/-/media/Files/downloads/gnu/15.2.rel1/binrel/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi.tar.xz"
+#hostmakedepends="python3"
+checksum=597893282ac8c6ab1a4073977f2362990184599643b4c5ee34870a8215783a16
+alternatives="arm-none-eabi:/usr/bin/arm-none-eabi-addr2line:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-addr2line
+arm-none-eabi:/usr/bin/arm-none-eabi-ar:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-ar
+arm-none-eabi:/usr/bin/arm-none-eabi-as:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-as
+arm-none-eabi:/usr/bin/arm-none-eabi-c++:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-c++
+arm-none-eabi:/usr/bin/arm-none-eabi-c++filt:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-c++filt
+arm-none-eabi:/usr/bin/arm-none-eabi-cpp:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-cpp
+arm-none-eabi:/usr/bin/arm-none-eabi-elfedit:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-elfedit
+arm-none-eabi:/usr/bin/arm-none-eabi-g++:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-g++
+arm-none-eabi:/usr/bin/arm-none-eabi-gcc:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcc
+arm-none-eabi:/usr/bin/arm-none-eabi-gcc-15.2.1:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcc-15.2.1
+arm-none-eabi:/usr/bin/arm-none-eabi-gcc-ar:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcc-ar
+arm-none-eabi:/usr/bin/arm-none-eabi-gcc-nm:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcc-nm
+arm-none-eabi:/usr/bin/arm-none-eabi-gcc-ranlib:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcc-ranlib
+arm-none-eabi:/usr/bin/arm-none-eabi-gcov:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcov
+arm-none-eabi:/usr/bin/arm-none-eabi-gcov-dump:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcov-dump
+arm-none-eabi:/usr/bin/arm-none-eabi-gcov-tool:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gcov-tool
+arm-none-eabi:/usr/bin/arm-none-eabi-gdb:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gdb
+arm-none-eabi:/usr/bin/arm-none-eabi-gdb-add-index:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gdb-add-index
+arm-none-eabi:/usr/bin/arm-none-eabi-gdb-add-index-py:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gdb-add-index-py
+arm-none-eabi:/usr/bin/arm-none-eabi-gdb-py:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gdb-py
+arm-none-eabi:/usr/bin/arm-none-eabi-gfortran:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gfortran
+arm-none-eabi:/usr/bin/arm-none-eabi-gprof:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gprof
+arm-none-eabi:/usr/bin/arm-none-eabi-gstack:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gstack
+arm-none-eabi:/usr/bin/arm-none-eabi-gstack-py:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-gstack-py
+arm-none-eabi:/usr/bin/arm-none-eabi-ld:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-ld
+arm-none-eabi:/usr/bin/arm-none-eabi-ld.bfd:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-ld.bfd
+arm-none-eabi:/usr/bin/arm-none-eabi-lto-dump:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-lto-dump
+arm-none-eabi:/usr/bin/arm-none-eabi-nm:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-nm
+arm-none-eabi:/usr/bin/arm-none-eabi-objcopy:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-objcopy
+arm-none-eabi:/usr/bin/arm-none-eabi-objdump:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-objdump
+arm-none-eabi:/usr/bin/arm-none-eabi-ranlib:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-ranlib
+arm-none-eabi:/usr/bin/arm-none-eabi-readelf:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-readelf
+arm-none-eabi:/usr/bin/arm-none-eabi-size:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-size
+arm-none-eabi:/usr/bin/arm-none-eabi-strings:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-strings
+arm-none-eabi:/usr/bin/arm-none-eabi-strip:/usr/lib/gcc/arm-none-eabi/${version}/bin/arm-none-eabi-strip
+"
+nopie=yes
+nostrip=yes
+noverifyrdeps=yes
+
+do_install() {
+	vmkdir /usr/lib/gcc/arm-none-eabi/${version}
+	vcopy * /usr/lib/gcc/arm-none-eabi/${version}
+}
