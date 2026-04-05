@@ -1,0 +1,37 @@
+# Template file for 'kotlin-lsp-bin'
+pkgname=kotlin-lsp-bin
+version=262.2310.0
+revision=1
+short_desc="Kotlin LSP server"
+maintainer="Krystian Krasowski <krystiankrasowski@gmail.com>"
+license="GFDL-1.2-or-later, GPL-3.0-or-later, LGPL-2.1-or-later"
+homepage="https://github.com/Kotlin/kotlin-lsp"
+distfiles="https://download-cdn.jetbrains.com/kotlin-lsp/262.2310.0/kotlin-lsp-262.2310.0-linux-x64.zip"
+checksum=c004242158f4b5e1d917ddd848e6f6a279484fa58a3e2bce8846b807d1ad16b1
+
+#nopie=yes
+#nostrip=yes
+#noverifyrdeps=yes
+
+do_install() {
+	vmkdir /opt/jetbrains/kotlin-lsp
+	vcopy * /opt/jetbrains/kotlin-lsp
+	vinstall kotlin-lsp.sh 755 /opt/jetbrains/kotlin-lsp
+	vinstall jre/bin/java 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/javac 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/javadoc 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jcmd 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jdb 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jfr 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jhsdb 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jinfo 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jmap 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jps 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jrunscript 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jstack 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jstat 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/jwebserver 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/keytool 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/rmiregistry 755 /opt/jetbrains/kotlin-lsp/jre/bin
+	vinstall jre/bin/serialver 755 /opt/jetbrains/kotlin-lsp/jre/bin
+}
